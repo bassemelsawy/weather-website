@@ -12,10 +12,10 @@ const forecast = (long,lati, callback)=>{
            }else{
            const temp = body.currently.temperature
            const precip = body.currently.precipProbability
-           const summary = body.daily.data[0].summary 
+           const summaryy = body.daily.data[0].summary 
            const tempHigh = body.daily.data[0].temperatureHigh 
            const tempLow = body.daily.data[0].temperatureLow
-           callback(undefined, summary+ ' It is currently ' + temp + ' degress out. This high today is ' + tempHigh + ' with a low of ' + tempLow + '. There is a ' + precip + '% chance of rain.')
+           callback(undefined, summaryy+ ' It is currently ' + temp + ' degress out. This high today is ' + tempHigh + ' with a low of ' + tempLow + '. There is a ' + precip + '% chance of rain.')
            }
            
         })
